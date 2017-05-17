@@ -1,0 +1,16 @@
+Source: elementary-keyring
+Section: misc
+Priority: optional
+Maintainer: Cody Garver <cody@elementary.io>
+Standards-Version: 3.9.7
+Build-Depends: debhelper (>= 9)
+
+Package: elementary-keyring
+Priority: important
+Architecture: all
+Depends: ${misc:Depends}, apt, gnupg
+Description: GnuPG keys of elementary OS
+ The elementary project digitally signs its Release files. This package
+ contains the archive keys used for the packages.elementary.io
+ repository.
+

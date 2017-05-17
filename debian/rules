@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+#export DH_VERBOSE=1
+
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_install:
+	dh_install --sourcedir=. keyrings/elementary-keyring.gpg usr/share/keyrings/
+	dh_install --sourcedir=. keyrings/elementary-keyring-removed-keys.gpg usr/share/keyrings/
+	dh_auto_install -- install

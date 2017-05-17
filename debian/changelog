@@ -1,0 +1,5 @@
+elementary-keyring (0.1) xenial; urgency=low
+
+  * Initial release.
+
+ -- Cody Garver <cody@elementary.io>  Sun, 14 May 2017 06:13:47 -0500
