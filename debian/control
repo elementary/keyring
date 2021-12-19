@@ -1,0 +1,15 @@
+Source: elementary-keyring
+Section: misc
+Priority: optional
+Maintainer: elementary Builds Team <builds@elementary.io>
+Standards-Version: 4.1.1
+Build-Depends: debhelper (>= 10)
+
+Package: elementary-keyring
+Priority: extra
+Architecture: all
+Depends: ${misc:Depends}
+Description: GnuPG keys of elementary OS
+ The elementary project digitally signs its Release files. This package
+ contains the archive keys used for the elementary PPA repositories.
+
